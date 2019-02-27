@@ -27,4 +27,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Lab7 Data.csv">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

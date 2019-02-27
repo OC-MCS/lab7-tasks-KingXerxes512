@@ -17,6 +17,5 @@ public:
 	string getDescription();
 	int getUnitsOnHand();
 	double getPrice();
-	float getStockValue();
-	void loadItems();
+	double getStockValue();
 };

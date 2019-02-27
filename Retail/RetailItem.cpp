@@ -1,9 +1,7 @@
 #pragma once
 #include <iostream>
-#include "RetailItem.h"
 #include <string>
-#include <fstream>
-#include <vector>
+#include "RetailItem.h"
 
 using namespace std;
 
@@ -44,31 +42,8 @@ double RetailItem::getPrice()
 	return price;
 }
 
-float RetailItem::getStockValue()
+double RetailItem::getStockValue()
 {
-	return (unitsOnHand * price);
-}
-
-void RetailItem::loadItems()
-{
-	int counter = 0;
-	string temp;
-	vector<RetailItem> object;
-	fstream data;
-	data.open("Lab7 Data.csv");
-	if (!data)
-	{
-		cout << "Could not open data file\n";
-		exit(EXIT_FAILURE);
-	}
-	else
-	{
-		while (getline(data, temp, ','));
-		{
-			getline(data, description, ',');
-			cin >> unitsOnHand;
-			cin.ignore();
-			cin >> price;
-		}
-	}
+	double stockValue = (unitsOnHand * price);
+	return stockValue;
 }
