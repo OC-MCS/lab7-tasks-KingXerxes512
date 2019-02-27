@@ -28,7 +28,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Lab7 Data.csv">
+    <None Include="RetailData.csv">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>

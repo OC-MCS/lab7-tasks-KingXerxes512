@@ -150,7 +150,7 @@
     <ClInclude Include="RetailItem.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Lab7 Data.csv" />
+    <None Include="RetailData.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
